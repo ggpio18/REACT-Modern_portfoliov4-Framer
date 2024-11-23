@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
 
             <motion.div
-            className='absolute left-[280px] top-[170px]'
+            className='hidden md:block absolute left-[280px] top-[170px]'
             drag
             >
                 <Image
@@ -35,7 +35,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-            className='absolute left-[220px] top-[20px]'
+            className='hidden md:block absolute left-[220px] top-[20px]'
             drag
             >
                 <Image
