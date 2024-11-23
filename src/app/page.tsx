@@ -1,5 +1,7 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Portfolio from "@/components/Portfolio";
 import Image from "next/image";
 
 
@@ -8,6 +10,8 @@ export default function Home() {
     <>
     <Navbar/>
     <Hero/>
+    <About/>
+    <Portfolio/>
     </>
   );
 }
