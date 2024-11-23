@@ -70,7 +70,7 @@ const Navbar = () => {
                 initial={false}
                 animate={nav ? 'open' : 'close'}
                 variants={menuVariants}
-                className="fixed left-0 top-0 w-full z-40 bg-black/90"
+                className="fixed left-0 top-0 w-full h-full z-40 bg-black/90"
             >
                 <ul className="text-4xl font-semibold my-24 text-center  space-y-8">
                     {navLinks.map((link, index) => (
