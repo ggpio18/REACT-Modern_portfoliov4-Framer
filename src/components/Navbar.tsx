@@ -8,6 +8,7 @@ import { div } from "framer-motion/client";
 const navLinks = [
     {title: "About", path: "#about"},
     {title: "Portfolio", path: "#portfolio"},
+    // can add some nav
 ];
 
 const Navbar = () => {
@@ -65,8 +66,21 @@ const Navbar = () => {
                 {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
             </div>
 
-            <motion.div>
-
+            <motion.div
+                initial={false}
+                animate={nav ? 'open' : 'close'}
+                variants={menuVariants}
+                className="fixed left-0 top-0 w-full z-40 bg-black/90"
+            >
+                <ul className="text-4xl font-semibold my-24 text-center  space-y-8">
+                    {navLinks.map((link, index) => (
+                        <li key={index}>
+                            <Link href={link.path} onClick={closeNav}>
+                            {link.title}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </motion.div>
 
     </div>
